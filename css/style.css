@@ -17,7 +17,9 @@ li {
 
 /* Grid */
 
-head,
+html,
+body,
+header,
 main,
 footer {
 	width: 100%;
@@ -27,16 +29,15 @@ footer {
 .head-img {
 	background-image: url(../img/head.jpg);
 	background-repeat: no-repeat;
+	
 	-webkit-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
 	
-	background-position: center none;
+	background-position: center;
 	width: 100%;
 	height: 433px;
-
-	/* width: 100%;
-	padding-top: 35%; */
+	/* height: 433px; */
 }
 
 .head-img:before {
@@ -145,6 +146,7 @@ figure {
 figcaption {
 	font-size: 46px;
 	font-weight: 300;
+	padding: 0 24px;
 }
 
 .more-inf {
@@ -272,8 +274,181 @@ span,
 ul li {
 	font-size: 13px;
 	font-weight: 600;
+	
+	-webkit-align-self: center;
+	        align-self: center;
 }
 
 ul li {
 	display: inline-block;
+}
+
+
+/* Adaptive */
+
+
+/* 768px - 956px */
+
+@media (max-width: 955px) {
+	
+	/* Header */
+	
+	.head-img {
+		height: 325px;
+	}
+
+	.head-img:before {
+		height: 125px;
+	}
+
+	/* Main */
+	
+	aside {
+		padding: 0;
+	}
+
+	.caption {
+		padding: 70px;
+	} 
+
+	.hot-dog,
+	.caption {
+		height: 375px;
+	}
+}
+
+/* 600px - 768px */
+
+@media (max-width: 765px) {
+	
+	/* Header */
+	
+	.head-img {
+		height: 225px;
+	}
+
+	.head-img:before {
+		height: 75px;
+	}
+
+	nav a {
+		padding: 30px 20px;
+	}
+
+	/* Main */
+	
+	[alt="logo-hot-dog"],
+	.more-inf {
+		margin: 35px;
+	}
+
+	figcaption {
+		font-size: 34px;
+	}
+
+	.caption {
+		padding: 20px 40px 20px 60px;
+	}
+
+	.caption p {
+		font-size: 16px;
+	}
+
+	.caption,
+	.hot-dog {
+		height: 300px;
+	}
+
+	/* Header */
+	
+	span,
+	ul li {
+		font-size: 10px;
+	}
+}
+
+/* 480px - 600px */
+
+@media (max-width: 599px) {
+	
+	/* Header */
+	
+	.head-img {
+		height: 200px;
+	}
+
+	nav a {
+		display: block;
+	}
+
+	/* Main */
+	
+	.caption,
+	.hot-dog {
+		flex: 1 1 100%;
+		height: 375px;
+	}
+
+	.img1 {
+		-webkit-order: -1;
+		    -ms-order: -1;
+		        order: -1;
+	}
+
+	.last-caption {
+		-webkit-order: 1;
+		    -ms-order: 1;
+		        order: 1;
+	}
+
+	/* Footer*/
+	
+	footer {
+		display: block;
+		padding: 15px 20px;
+	}
+	
+	ul {
+		margin-top: 5px;
+	}
+
+	ul li {
+		display: block;
+		padding-top: 5px;
+	}
+	
+	.line {
+		display: none;
+	}
+}
+
+
+/* 320px - 480px */
+
+@media (max-width: 479px) {
+	
+	/* Header */
+	
+	.head-img {
+		height: 200px;
+	}
+
+	/* Main */
+	
+	figcaption {
+		font-size: 22px;
+	}
+	
+	.more-inf {
+		margin: 35px 25px;
+		font-size: 15px;
+	}
+
+	.caption,
+	.hot-dog {
+		height: 300px;
+	}
+
+	
+	/* Footer*/
 }
