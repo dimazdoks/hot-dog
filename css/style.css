@@ -1,0 +1,279 @@
+/* StyleSheet */
+
+h1,
+a,
+span,
+figcaption,
+p,
+li {
+	font-family: 'Open Sans', sans-serif;
+	color: #555559;
+	
+}
+
+#inst-tag {
+	font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+/* Grid */
+
+head,
+main,
+footer {
+	width: 100%;
+}
+
+/* Header */
+.head-img {
+	background-image: url(../img/head.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	
+	background-position: center none;
+	width: 100%;
+	height: 433px;
+
+	/* width: 100%;
+	padding-top: 35%; */
+}
+
+.head-img:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+}
+
+#inst-tag {
+	color: #FFF;
+	position: absolute;
+	font-weight: bold;
+	font-size: small;
+	right: 0;
+	padding: 12px 20px;
+	
+	text-align: top;
+}
+
+#inst-tag:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	
+	padding-right: 8px;
+
+	background-image: url(../img/instagram.png);
+	background-repeat: no-repeat;
+	
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+
+nav {
+	text-align: center;	
+}
+
+nav a {
+	display: inline-block;
+	
+	font-size: 20px;
+	font-weight: 600;
+	color: #2e2e2e;
+	text-transform: uppercase;
+	
+	padding: 35px 35px;
+	
+	-webkit-transition: .2s all ease;
+	   -moz-transition: .2s all ease;
+	    -ms-transition: .2s all ease;
+	     -o-transition: .2s all ease;
+	        transition: .2s all ease;
+}
+
+nav a:hover {
+	opacity: .7;
+}
+
+/* Main */
+
+
+aside, 
+figure {
+	display: flex;
+
+	-webkit-flex-flow: column;
+	    -ms-flex-flow: column;
+	        flex-flow: column;	
+
+	-webkit-align-self: center;
+        	align-self: center;
+	    
+	text-align: center;
+}
+
+aside {
+	background-color: rgba(250, 250, 250, 1);
+	margin: 0 auto;
+	padding: 50px 0;
+	
+	-webkit-box-shadow: 0px 8px 12px -8px rgba(0,0,0, .2) inset;
+	        box-shadow: 0px 8px 12px -8px rgba(0,0,0, .2) inset;
+}
+
+figure {
+	max-width: 850px;
+}
+
+.more-inf,
+[alt="logo-hot-dog"] {
+	-webkit-align-self: center;
+	        align-self: center;
+}
+
+
+[alt="logo-hot-dog"] {
+	margin: 40px 0;
+}
+
+figcaption {
+	font-size: 46px;
+	font-weight: 300;
+}
+
+.more-inf {
+	margin: 90px;
+	padding: 20px 28px;
+	background-color: #276781;
+	
+	color: #FFF;
+	font-weight: 600;
+	font-size: 17px;
+	
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	
+	-webkit-transition: .2s opacity ease;
+	   -moz-transition: .2s opacity ease;
+	    -ms-transition: .2s opacity ease;
+	     -o-transition: .2s opacity ease;
+	        transition: .2s opacity ease;
+}
+
+.more-inf:hover {
+	opacity: .8;
+}
+
+/* Content */
+
+section {
+	width: 100%;
+}
+
+section,
+.hot-dog,
+.caption {
+	display: flex;
+	
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.hot-dog,
+.caption {
+	flex: 1 1 50%;
+	width: 50%;
+	height: 500px;
+}
+
+.img1 {background-image: url(../img/img1.jpg);}
+.img2 {background-image: url(../img/img2.jpg);}
+.img3 {background-image: url(../img/img3.jpg);}
+
+.hot-dog {
+	background-repeat: no-repeat;
+	
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	
+	background-position: center;
+	
+	-webkit-transition: .2s all ease;
+	   -moz-transition: .2s all ease;
+	    -ms-transition: .2s all ease;
+	     -o-transition: .2s all ease;
+	        transition: .2s all ease;
+}
+
+.hot-dog:hover {
+	opacity: .7;
+}
+
+.caption {
+	-webkit-align-content: center;
+	        align-content: center;
+	    
+	padding: 0 120px;
+}
+
+h1,
+p {
+	font-size: 18px;
+}
+
+p {
+	font-weight: 300;
+}
+
+
+
+.caption h1:before {
+	content: "";
+	
+	display: inline-block;
+	width: 30px;
+	margin-left: -50px;
+	padding: 0 10px;
+	height: 100%;
+	
+	background-image: url(../img/rectangle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	-webkit-background-size: 100%;
+	     -o-background-size: 100%;
+	        background-size: 60%;
+	
+	vertical-align: middle;
+}
+
+footer {
+	background-color: #efefef;
+	
+	padding: 30px 20px;
+
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+span,
+ul li {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+ul li {
+	display: inline-block;
+}
