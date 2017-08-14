@@ -77,8 +77,45 @@ footer {
 	        background-size: contain;
 }
 
+	/* Open-Menu */
+	
+	#open-nav {
+		display: none;
+	}
+
+	label {
+		display: none;
+		height: 83px;
+		padding: 30px 20px;
+		
+		background-image: url(../img/menu-ico.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;	
+		
+		-webkit-transition: .2s opacity ease;
+           -moz-transition: .2s opacity ease;
+     		-ms-transition: .2s opacity ease;
+      		 -o-transition: .2s opacity ease;
+             	transition: .2s opacity ease;	     
+	}
+
+	label:hover,
+	#open-nav:checked ~ label {
+		opacity: .7;
+	}
+
+	/* --- END --- */
+
+
 nav {
 	text-align: center;	
+	
+	-webkit-transition: .2s all ease;
+	   -moz-transition: .2s all ease;
+	    -ms-transition: .2s all ease;
+	     -o-transition: .2s all ease;
+	        transition: .2s all ease;
 }
 
 nav a {
@@ -90,12 +127,6 @@ nav a {
 	text-transform: uppercase;
 	
 	padding: 35px 35px;
-	
-	-webkit-transition: .2s all ease;
-	   -moz-transition: .2s all ease;
-	    -ms-transition: .2s all ease;
-	     -o-transition: .2s all ease;
-	        transition: .2s all ease;
 }
 
 nav a:hover {
@@ -377,9 +408,23 @@ ul li {
 		height: 200px;
 	}
 
+
+	label {
+		display: block;
+	}
+
+	#open-nav ~ nav {
+		display: none;
+	}
+
+	#open-nav:checked ~ nav {
+		display: block;
+	}
+
 	nav a {
 		display: block;
 	}
+
 
 	/* Main */
 	
